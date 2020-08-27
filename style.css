@@ -1,0 +1,77 @@
+.navbar {
+    background-color: white;
+
+}
+.navbar-brand {
+    background-color: rgb(74, 170, 165);
+    background-size: 20pt;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(74, 170, 165);
+    margin-top: 5%;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+.container {
+    margin: 5%;
+}
+
+.row {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px;
+
+}
+/* Columns */
+.col-md-4 {
+    background-color: white;
+}
+.col-md-6 {
+    background-color: white;
+}
+
+.col-md-8 {
+    background-color: white;
+    line-height: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.col-md-12 {
+    background-color: white;
+    align-content: center;
+}
+
+p {
+    line-height: 1.8;
+    padding-bottom: 15px;
+}
+
+#TempFig {
+    float: left;
+}
+
+/* Hovering Temperature */
+.TempHover {
+    position: relative;
+    display: inline-block;
+}
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.card:hover .img-top {
+    display: inline;
+}
