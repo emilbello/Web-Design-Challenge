@@ -13,7 +13,19 @@
 h1 {
     font-size: 30px;
     color: rgb(74, 170, 165);
-    margin-top: 5%;
+    margin-top: 10%;
+    text-align: left;
+}
+
+h2 {
+    font-size: 25px;
+    color: rgb(74, 170, 165);
+    margin-top: 11%;
+    text-align: left;
+}
+
+h3 {
+    margin-bottom: 0%;
 }
 
 body {
@@ -21,7 +33,7 @@ body {
 }
 
 .container {
-    margin: 5%;
+    justify-content: center;
 }
 
 .row {
@@ -31,29 +43,49 @@ body {
 
 }
 /* Columns */
+.col-md-1 {
+    background-color: transparent
+}
+
 .col-md-4 {
     background-color: white;
+    text-align: center;
+    height: 100%;
 }
 .col-md-6 {
     background-color: white;
+    text-align: center;
+}
+
+.col-md-7 {
+    background-color: white;
+    line-height: 5px;
+    padding-left: 15px;
+    padding-right: 10px;   
 }
 
 .col-md-8 {
     background-color: white;
     line-height: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+    padding-left: 15px;
+    padding-right: 10px;   
 }
 
 .col-md-12 {
     background-color: white;
-    align-content: center;
+    text-align: center;
 }
 
 p {
     line-height: 1.8;
     padding-bottom: 15px;
+    text-align: left;
+}
+
+.paragraph {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
 }
 
 #TempFig {
@@ -61,17 +93,76 @@ p {
 }
 
 /* Hovering Temperature */
-.TempHover {
-    position: relative;
-    display: inline-block;
+
+#TempHover {
+    background-image: url('Resources/assets/images/Fig1.png');
+    height: 100px;
+    width: 100px ;
+    background-size: 100px 100px;
+    border-style: none;
 }
-.card .img-top {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
+
+#TempHover:hover {
+    background-image: url('Resources/assets/images/temperature_icon.png');
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    border-style: none;
 }
-.card:hover .img-top {
-    display: inline;
+
+#HumidHover {
+    background-image: url('Resources/assets/images/Fig2.png');
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    border-style: none;
+}
+
+#HumidHover:hover {
+    background-image: url('Resources/assets/images/humidity_icon.png');
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    border-style: none;
+}
+
+#CloudiHover {
+    background-image: url('Resources/assets/images/Fig3.png');
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    border-style: none;
+}
+
+#CloudiHover:hover {
+    background-image: url('Resources/assets/images/cloudiness_icon.png');
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    border-style: none;
+}
+
+#WindHover {
+    background-image: url('Resources/assets/images/Fig4.png');
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    border-style: none;
+}
+
+#WindHover:hover {
+    background-image: url('Resources/assets/images/wind_speed_icon.png');
+    height: 100px;
+    width: 100px;
+    background-size: 100px 100px;
+    border-style: none;
+}
+
+/* #### Plots #### */
+.Plots_Title {
+    font-size: 50px;
+}
+
+.tool_tip_text {
+    font-size: 40px;
 }

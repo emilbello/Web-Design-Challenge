@@ -29,35 +29,59 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Max Temperature</a>
-                  <a class="dropdown-item" href="#">Humidity</a>
-                  <a class="dropdown-item" href="#">Cloudiness</a>
-                  <a class="dropdown-item" href="#">Wind Speed</a>
+                  <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
                 </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
+              <a class="nav-link" href="Data.html">Data</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <article>
-              <h1>Visualizations</h1>
-              <hr class="my-4">
-                <img src="Resources/assets/images/Fig1.png" id="TempHover" width="300px" height="300px" alt="Card Back">
-                  <!-- <img src="Resources/assets/images/Fig2.png" width="300px" height="300px" class="img top" alt="Card Back"> -->
-            </article>
+      <div class="view" style="background-image: url('Resources/assets/images/hot_cold.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- Temperature Chart and Text -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <article>
+                <h1 class="font-weight-bold">Max Temperature</h1>
+                <hr class="my-4">
+                  <img src="Resources/assets/images/Fig1.png" width=100% alt="Card Back">
+                  <p class="paragraph">As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northerm hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+                  </p>
+              </article>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-4">
+              <h2 class="font-weight-bold">Visualizations</h2>
+              <hr class="my-3">
+              <!-- <a href="Temperature.html"><div id="Prueba"></div></a> -->
+              <a href="Temperature.html">
+                <img id="TempHover" style="border:5px solid rgb(74, 170, 165)">
+              </a>
+              <a href="Humidity.html"> 
+                <img id="HumidHover">
+              </a>
+              <a href="Cloudiness.html">
+                <img id=CloudiHover>
+              </a>
+              <a href="WindSpeed.html">
+                <img id="WindHover">
+              </a>
+                       
+            </div>
           </div>
         </div>
       </div>
-
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- ### Navigation Bar, Dropdown menu, and main links ### -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="LandingPage.html">Latitude</a>
+        
+        
+        <!-- Right Hamburger buttom when colapsing -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Right bar navigation: Plots, Comparison, Data -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPlots" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Comparison.html">Comparison <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="view" style="background-image: url('Resources/assets/images/humidity_background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- Temperature Chart and Text -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <article>
+                <h1 class="font-weight-bold">Humidity</h1>
+                <hr class="my-4">
+                  <img src="Resources/assets/images/Fig2.png" width=100% alt="Card Back">
+                  <p class="paragraph">The Humidity chart shows a scattered pattern for both the Northern and Southern Hemispheres. Besides the difference found in the Lat vs. Max Temperature chart, there seems to be little correlation between the latitude and humidity.
+                  </p>
+              </article>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-4">
+              <h2 class="font-weight-bold">Visualizations</h2>
+              <hr class="my-3">
+              <!-- <a href="Temperature.html"><div id="Prueba"></div></a> -->
+              <a href="Temperature.html">
+                <img id="TempHover">
+              </a>
+              <a href="Humidity.html"> 
+                <img id="HumidHover" style="border:5px solid rgb(74, 170, 165)">
+              </a>
+              <a href="Cloudiness.html">
+                <img id=CloudiHover>
+              </a>
+              <a href="WindSpeed.html">
+                <img id="WindHover">
+              </a>
+                       
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+
+</body>
+
+</html>
